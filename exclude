@@ -11,3 +11,10 @@ jdbc/ee/connectionClient1.java#testNativeSQL_from_boat
 # dont really want people to set the fetch size
 jdbc/ee/resultSetClient1.java#testSetFetchSize01_from_boat
 jdbc/ee/resultSetClient1.java#testSetFetchSize02_from_boat
+
+
+# decimal stuff
+jdbc/ee/resultSetClient11.java#testGetByte22_from_boat
+jdbc/ee/resultSetClient11.java#testGetByte23_from_boat
+jdbc/ee/resultSetClient11.java#testGetByte25_from_boat
+jdbc/ee/resultSetClient11.java#testGetByte26_from_boat

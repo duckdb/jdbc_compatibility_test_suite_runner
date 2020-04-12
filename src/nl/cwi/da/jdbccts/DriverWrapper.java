@@ -33,9 +33,14 @@ public class DriverWrapper implements Driver {
 		s.executeUpdate("create table ctstable1 (TYPE_ID int, TYPE_DESC varchar(32))");
 		s.executeUpdate("create table ctstable2 (KEY_ID int, COF_NAME varchar(32), PRICE float, TYPE_ID int )");
 		s.executeUpdate("create table Smallint_Tab (MAX_VAL SMALLINT, MIN_VAL SMALLINT, NULL_VAL SMALLINT NULL)");
-
-		
-
+		s.executeUpdate("create table Varchar_Tab (COFFEE_NAME VARCHAR(60), NULL_VAL VARCHAR(60) NULL)");
+		s.executeUpdate("create table Tinyint_Tab (MAX_VAL SMALLINT, MIN_VAL SMALLINT, NULL_VAL SMALLINT NULL)");
+		s.executeUpdate("create table Integer_Tab (MAX_VAL INTEGER, MIN_VAL INTEGER, NULL_VAL INTEGER NULL)");
+		s.executeUpdate("create table Real_Tab (MAX_VAL float8, MIN_VAL float8 ,NULL_VAL float8 NULL)");
+		s.executeUpdate("create table Float_Tab (MAX_VAL FLOAT8, MIN_VAL FLOAT8, NULL_VAL FLOAT8 NULL)");
+		s.executeUpdate("create table Decimal_Tab (MAX_VAL DECIMAL(30,15),MIN_VAL DECIMAL(30,15), NULL_VAL DECIMAL(30,15) NULL) ");
+		s.executeUpdate("create table Numeric_Tab (MAX_VAL NUMERIC(30,15), MIN_VAL NUMERIC(30,15), NULL_VAL NUMERIC(30,15) NULL) ");
+		s.executeUpdate("create table Char_Tab (COFFEE_NAME CHAR(30), NULL_VAL CHAR(30) NULL) ");
 		s.close();
 		return conn;
 	}
