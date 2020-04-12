@@ -1,0 +1,30 @@
+harness.log.traceflag=false
+vehicle=boat
+DriverManager=yes
+Driver=nl.cwi.da.jdbccts.DriverWrapper
+db1=jdbc:wrap:
+user1=dummy
+ptable=ctstable2
+ftable=ctstable1
+cofSize=1050
+cofTypeSize=1050
+
+Dbschema_Tab1_Insert=insert into ctstable2 values(?, ?, ?, ?)
+Dbschema_Tab2_Insert=insert into ctstable1 values(?, ?)
+
+Dbschema_Tab1_Delete=delete from ctstable2
+Dbschema_Tab2_Delete=delete from ctstable1
+
+Coffee_Updcount_Query=select count(*) from ctstable2 where TYPE_ID=1
+Ins_Coffee_Tab=insert into ctstable2 values (9,'COFFEE-9',9.0,5)
+Sel_Coffee_Tab=select PRICE from ctstable2 where KEY_ID>4
+SelCoffeeAll=SELECT COF_NAME, PRICE FROM ctstable2
+SelCoffeeNull=select * from ctstable2 where TYPE_ID=0
+Upd_Coffee_Tab=update ctstable2 set PRICE=PRICE*20 where TYPE_ID=1
+
+
+Smallint_Tab_Delete=delete from Smallint_Tab
+Smallint_Tab_Insert= insert into Smallint_Tab values(32767,-32768,null)
+Smallint_Query_Max=Select MAX_VAL from Smallint_Tab
+Smallint_Query_Min=Select MIN_VAL from Smallint_Tab
+Smallint_Query_Null=Select NULL_VAL from Smallint_Tab
