@@ -41,6 +41,11 @@ public class DriverWrapper implements Driver {
 		s.executeUpdate("create table Decimal_Tab (MAX_VAL DECIMAL(30,15),MIN_VAL DECIMAL(30,15), NULL_VAL DECIMAL(30,15) NULL) ");
 		s.executeUpdate("create table Numeric_Tab (MAX_VAL NUMERIC(30,15), MIN_VAL NUMERIC(30,15), NULL_VAL NUMERIC(30,15) NULL) ");
 		s.executeUpdate("create table Char_Tab (COFFEE_NAME CHAR(30), NULL_VAL CHAR(30) NULL) ");
+		s.executeUpdate("create table Bit_Tab (MAX_VAL boolean, MIN_VAL boolean, NULL_VAL boolean NULL)");
+		s.executeUpdate("create table Double_Tab (MAX_VAL DOUBLE PRECISION, MIN_VAL DOUBLE PRECISION, NULL_VAL DOUBLE PRECISION NULL)");
+		s.executeUpdate("create table Bigint_Tab (MAX_VAL bigint, MIN_VAL bigint , NULL_VAL bigint  NULL)");
+		s.executeUpdate("create table Longvarchar_Tab (COFFEE_NAME TEXT)");
+		s.executeUpdate("create table Longvarcharnull_Tab (NULL_VAL TEXT NULL)");
 		s.close();
 		return conn;
 	}

@@ -2,7 +2,7 @@
 
 all: jar
 # fixme this is a hardcoded path
-DUCKDB_JAR=/Users/hannes/source/duckdb/build/jdbc/tools/jdbc/DuckDBJ.jar
+# DUCKDB_JAR=/Users/hannes/source/duckdb/build/jdbc/tools/jdbc/DuckDBJ.jar
 
 clean:
 	rm -rf build
