@@ -81,6 +81,7 @@ jdbc/ee/prepStmtClient15.java#testSetObject235_from_boat
 # float compare
 jdbc/ee/prepStmtClient7.java#testSetObject72_from_boat
 jdbc/ee/prepStmtClient7.java#testSetObject73_from_boat
+jdbc/ee/prepStmtClient5.java#testSetObject40_from_boat
 jdbc/ee/prepStmtClient5.java#testSetObject41_from_boat
 jdbc/ee/prepStmtClient10.java#testSetObject124_from_boat
 jdbc/ee/prepStmtClient10.java#testSetObject125_from_boat
