@@ -11,7 +11,7 @@ jar: jakartaee-tck update
 	mkdir -p build && cd build && cmake .. && cmake --build .
 
 jakartaee-tck:
-	git clone https://github.com/eclipse-ee4j/jakartaee-tck.git --depth 10
+	git clone https://github.com/eclipse-ee4j/jakartaee-tck.git --branch 9.0.0-RC1 --depth 10
 
 update: jakartaee-tck
 	(cd jakartaee-tck; git pull)
