@@ -1,4 +1,4 @@
-package nl.cwi.da.jdbccts;
+package org.duckdb.jdbccts;
 
 import com.sun.javatest.Status;
 import com.sun.ts.lib.harness.ServiceEETest;

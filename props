@@ -1,7 +1,7 @@
 harness.log.traceflag=false
 vehicle=boat
 DriverManager=yes
-Driver=nl.cwi.da.jdbccts.DriverWrapper
+Driver=org.duckdb.jdbccts.DriverWrapper
 db1=jdbc:wrap:
 user1=dummy
 ptable=ctstable2
