@@ -32,6 +32,8 @@ public class DriverWrapper implements Driver {
 		try (Statement s = conn.createStatement()) {
 			s.executeUpdate("create table ctstable1 (TYPE_ID int, TYPE_DESC varchar(32))");
 			s.executeUpdate("create table ctstable2 (KEY_ID int, COF_NAME varchar(32), PRICE float, TYPE_ID int )");
+			s.executeUpdate("create table ctstable3(STRING1 VARCHAR(20), STRING2 VARCHAR(20), STRING3 VARCHAR(20), NUMCOL NUMERIC, FLOATCOL FLOAT, DATECOL DATE, TIMECOL TIME, TSCOL1 DATE, TSCOL2 DATE)");
+			s.executeUpdate("create table ctstable4(STRING4 VARCHAR(20), NUMCOL NUMERIC)");
 			s.executeUpdate("create table Smallint_Tab (MAX_VAL SMALLINT, MIN_VAL SMALLINT, NULL_VAL SMALLINT NULL)");
 			s.executeUpdate("create table Varchar_Tab (COFFEE_NAME VARCHAR(60), NULL_VAL VARCHAR(60) NULL)");
 			s.executeUpdate("create table Tinyint_Tab (MAX_VAL SMALLINT, MIN_VAL SMALLINT, NULL_VAL SMALLINT NULL)");
@@ -46,6 +48,10 @@ public class DriverWrapper implements Driver {
 			s.executeUpdate("create table Bigint_Tab (MAX_VAL bigint, MIN_VAL bigint , NULL_VAL bigint  NULL)");
 			s.executeUpdate("create table Longvarchar_Tab (COFFEE_NAME TEXT)");
 			s.executeUpdate("create table Longvarcharnull_Tab (NULL_VAL TEXT NULL)");
+			s.executeUpdate("create table Date_Tab (MFG_DATE DATE, NULL_VAL DATE NULL)");
+			s.executeUpdate("create table Time_Tab (BRK_TIME TIME, NULL_VAL TIME NULL)");
+			s.executeUpdate("create table Timestamp_Tab (IN_TIME TIMESTAMP without time zone, NULL_VAL TIMESTAMP  without time zone )");
+
 		}
 		return conn;
 	}
