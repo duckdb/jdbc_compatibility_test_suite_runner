@@ -51,6 +51,9 @@ public class DriverWrapper implements Driver {
 			s.executeUpdate("create table Date_Tab (MFG_DATE DATE, NULL_VAL DATE NULL)");
 			s.executeUpdate("create table Time_Tab (BRK_TIME TIME, NULL_VAL TIME NULL)");
 			s.executeUpdate("create table Timestamp_Tab (IN_TIME TIMESTAMP without time zone, NULL_VAL TIMESTAMP  without time zone )");
+			s.executeUpdate("create table Binary_Tab (BINARY_VAL BLOB NULL)");
+			s.executeUpdate("create table Varbinary_Tab (VARBINARY_VAL BLOB NULL)");
+			s.executeUpdate("create table Longvarbinary_Tab (LONGVARBINARY_VAL BLOB NULL)");
 
 		}
 		return conn;

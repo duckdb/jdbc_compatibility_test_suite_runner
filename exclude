@@ -131,24 +131,23 @@ jdbc/ee/prepStmtClient15.java#testSetObject235_from_boat
 jdbc/ee/prepStmtClient16.java#testSetBinaryStream_from_boat
 jdbc/ee/prepStmtClient16.java#testSetCharacterStream_from_boat
 
+# resultSet
+jdbc/ee/resultSetClient1.java#testSetFetchSize02_from_boat
+jdbc/ee/resultSetClient47.java#testGetString84_from_boat
+jdbc/ee/resultSetClient47.java#testGetBytes01_from_boat
+jdbc/ee/resultSetClient47.java#testGetBytes03_from_boat
+jdbc/ee/resultSetClient49.java#testGetTime13_from_boat
+jdbc/ee/resultSetClient49.java#testGetTime14_from_boat
+jdbc/ee/resultSetClient49.java#testGetTime16_from_boat
+jdbc/ee/resultSetClient49.java#testGetTime17_from_boat
+jdbc/ee/resultSetClient49.java#testGetTime18_from_boat
 
+# stmtClient
 jdbc/ee/stmtClient2.java#testGetResultSetType03_from_boat
 jdbc/ee/stmtClient2.java#testSetFetchSize02_from_boat
 jdbc/ee/stmtClient2.java#testGetWarnings_from_boat
-
-
-# dont really want people to set the fetch size
-jdbc/ee/resultSetClient1.java#testSetFetchSize01_from_boat
-jdbc/ee/resultSetClient1.java#testSetFetchSize02_from_boat
-
-
-# decimal stuff
-jdbc/ee/resultSetClient11.java#testGetByte22_from_boat
-jdbc/ee/resultSetClient11.java#testGetByte23_from_boat
-jdbc/ee/resultSetClient11.java#testGetByte25_from_boat
-jdbc/ee/resultSetClient11.java#testGetByte26_from_boat
-jdbc/ee/resultSetClient17.java#testGetShort61_from_boat
-jdbc/ee/resultSetClient17.java#testGetShort64_from_boat
-
-jdbc/ee/rsMetaClient.java#testGetColumnDisplaySize_from_boat
-jdbc/ee/resultSetClient45.java#testGetString53_from_boat
+jdbc/ee/stmtClient3.java#testSetFetchSize05_from_boat
+jdbc/ee/stmtClient3.java#testSetMaxFieldSize01_from_boat
+jdbc/ee/stmtClient3.java#testSetMaxFieldSize02_from_boat
+jdbc/ee/stmtClient3.java#testSetMaxRows01_from_boat
+jdbc/ee/stmtClient3.java#testSetMaxRows02_from_boat

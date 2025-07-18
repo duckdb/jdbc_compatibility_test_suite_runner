@@ -43,10 +43,13 @@ import com.sun.ts.tests.jdbc.ee.resultSet.resultSet17.resultSetClient17;
 import com.sun.ts.tests.jdbc.ee.resultSet.resultSet18.resultSetClient18;
 import com.sun.ts.tests.jdbc.ee.resultSet.resultSet41.resultSetClient41;
 import com.sun.ts.tests.jdbc.ee.resultSet.resultSet45.resultSetClient45;
+import com.sun.ts.tests.jdbc.ee.resultSet.resultSet47.resultSetClient47;
+import com.sun.ts.tests.jdbc.ee.resultSet.resultSet49.resultSetClient49;
 import com.sun.ts.tests.jdbc.ee.resultSet.resultSet7.resultSetClient7;
 import com.sun.ts.tests.jdbc.ee.rsMeta.rsMetaClient;
 import com.sun.ts.tests.jdbc.ee.stmt.stmt1.stmtClient1;
 import com.sun.ts.tests.jdbc.ee.stmt.stmt2.stmtClient2;
+import com.sun.ts.tests.jdbc.ee.stmt.stmt3.stmtClient3;
 
 
 public class TestRunner {
@@ -59,8 +62,11 @@ public class TestRunner {
 	}
 	
 	public static void main(String[] args) {
+
 		run(new batchUpdateClient(), args);
+
 		run(new connectionClient1(), args);
+
 		run(new dbMetaClient1(), args);
 		run(new dbMetaClient2(), args);
 		run(new dbMetaClient3(), args);
@@ -73,9 +79,12 @@ public class TestRunner {
 		// run(new dbMetaClient10(), args);
 		run(new dbMetaClient11(), args);
 		run(new dbMetaClient12(), args);
+
 		// todo: escapeSyntax
 		run(new batUpdExceptClient(), args);
+
 		run(new sqlExceptionClient(), args);
+
 		run(new prepStmtClient1(), args);
 		run(new prepStmtClient2(), args);
 		run(new prepStmtClient3(), args);
@@ -93,10 +102,6 @@ public class TestRunner {
 		run(new prepStmtClient15(), args);
 		run(new prepStmtClient16(), args);
 
-
-		run(new stmtClient1(), args);
-		run(new stmtClient2(), args);
-		
 		run(new resultSetClient1(), args);
 		run(new resultSetClient7(), args);
 		run(new resultSetClient10(), args);
@@ -106,8 +111,8 @@ public class TestRunner {
 		run(new resultSetClient18(), args);
 		run(new resultSetClient41(), args);
 		run(new resultSetClient45(), args); 
-//		run(new resultSetClient47(), args); // varbinary stuff
-//		run(new resultSetClient49(), args); // time & timestamps
+		run(new resultSetClient47(), args); // varbinary stuff
+		run(new resultSetClient49(), args); // time & timestamps
 
 		// special snowflake rsMetaClient has a bug that expects ftable to be ctstable2
 		String[] args_meta = new String[args.length+1];
@@ -116,6 +121,10 @@ public class TestRunner {
 		}
 		args_meta[args_meta.length-1] = "-dftable=ctstable2";
 		run(new rsMetaClient(), args_meta);
+
+		run(new stmtClient1(), args);
+		run(new stmtClient2(), args);
+		run(new stmtClient3(), args);
 		
 		System.exit(0);
 	}
